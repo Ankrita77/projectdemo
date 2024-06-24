@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="styleindex.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form action="submit.php" method="post">
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="Rollno">Roll No: </label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <select id="semester" name="semester" required>
+            <option value="">Select Semester</option>
+            <option value="1">1st Semester</option>
+            <option value="2">2nd Semester</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <div>
+          <label for="degree">Degree:</label>
+          <select id="degree" name="degree" required>
+            <option value="">Select Degree</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="B.Sc">B.Sc</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <div>
+          <label for="files">Upload Files:</label>
+          <input
+            type="file"
+            id="files"
+            name="files[]"
+            multiple
+            accept=".pdf,.doc,.docx"
+          />
+        </div>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
